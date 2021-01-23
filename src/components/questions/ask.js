@@ -12,10 +12,13 @@ const Ask = (props) => {
         transform: "rotate(0deg)",
     });
     const [spacingBottom, setSpacingBottom] = useState({
-        paddingBottom: "18px",
+        paddingBottom: "0px",
     });
     const [spacingBetween, setSpacingBetween] = useState({
         marginBottom: "0px",
+    });
+    const [textWeight, setTextWeight] = useState({
+        fontWeight: 400,
     });
 
     const inner = useRef();
@@ -27,11 +30,13 @@ const Ask = (props) => {
             setRotateArrow({ transform: "rotate(180deg)" });
             setSpacingBottom({ paddingBottom: "16px" });
             setSpacingBetween({ marginBottom: "12px" });
+            setTextWeight({ fontWeight: 700 });
         } else {
             setResStyle({ height: "0" });
             setRotateArrow({ transform: "rotate(0deg)" });
             setSpacingBottom({ paddingBottom: "18px" });
             setSpacingBetween({ marginBottom: "0px" });
+            setTextWeight({ fontWeight: 400 });
         }
     }, [isClicked]);
 
@@ -42,7 +47,9 @@ const Ask = (props) => {
     return (
         <div className="askResponse" style={spacingBottom}>
             <div className="askWrapper" style={spacingBetween}>
-                <div className="ask">{props.ask}</div>
+                <div className="ask" style={textWeight}>
+                    {props.ask}
+                </div>
                 <div className="askBtn" style={rotateArrow}>
                     <img src={arrowDown} alt="^" onClick={clickHandler} />
                 </div>

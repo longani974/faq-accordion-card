@@ -25,7 +25,7 @@ body {
 }
 
 .content {
-    height: 535px;
+    /* height: 535px; */
     background: #fff;
     box-shadow: 0px 50px 50px -20px rgba(53, 18, 122, 0.497159);
     border-radius: 23px;
@@ -37,7 +37,7 @@ h1 {
     font-size: 32px;
     line-height: 32px;
     text-align: center;
-    margin-bottom: 38px;
+    margin-bottom: 20px;
     color: var(--veryDarkDesaturatedBlue);
 }
 
@@ -62,6 +62,8 @@ h1 {
     font-size: 13px;
     line-height: 13px;
     color: var(--veryDarkGrayishBlue);
+    transition: font-weight 0.15s;
+    padding-top: 18px;
 }
 
 .response {
