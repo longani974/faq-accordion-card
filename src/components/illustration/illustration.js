@@ -1,29 +1,22 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect } from "react";
 
-import woman from '../../assets/images/illustration-woman-online-mobile.svg';
-import bgMobile from '../../assets/images/bg-pattern-mobile.svg';
+import woman from "../../assets/images/illustration-woman-online-mobile.svg";
+import bgMobile from "../../assets/images/bg-pattern-mobile.svg";
 
-import styles from './illustration.module.css';
+import styles from "./illustration.module.css";
+
+import { parallax } from "../../utils";
 
 const Illustration = () => {
     const [scrollPosition, setScrollPosition] = useState(0);
 
     useEffect(() => {
-        const handleScroll = () => {
-            const position = window.pageYOffset;
-            setScrollPosition(position);
-            // console.log(scrollPosition);
-        };
-        window.addEventListener('scroll', handleScroll, { passive: true });
-
-        return () => {
-            window.removeEventListener('scroll', handleScroll);
-        };
-    });
+        parallax(8, 15, setScrollPosition);
+    }, []);
 
     return (
         <div
-            style={{ '--parallax': scrollPosition / 8 + 'px' }}
+            style={{ "--parallax": scrollPosition + "px" }}
             className={`illustration ${styles.container}`}
         >
             <div className={styles.woman}>
