@@ -1,0 +1,12 @@
+.container {
+    position: relative;
+    max-width: 237px;
+    max-height: 180px;
+    margin: auto;
+    margin-bottom: -70px;
+}
+
+.woman {
+    margin-bottom: calc(-100px - var(--parallax));
+    margin-left: -29px;
+}
