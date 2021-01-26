@@ -13,3 +13,7 @@
     z-index: 10;
     top: var(--parallax);
 }
+
+.shadow {
+    margin-top: 20px;
+}
