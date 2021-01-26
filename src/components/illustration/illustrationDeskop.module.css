@@ -1,0 +1,34 @@
+.woman {
+    width: 472px;
+    height: 359px;
+    position: absolute;
+    top: 70px;
+    right: 0;
+    background-image: url('../../assets/images/illustration-woman-online-desktop.svg');
+}
+
+.womanWrapper {
+    position: relative;
+    width: 388px;
+    height: 100%;
+    overflow: hidden;
+}
+
+.illustrationWrapper {
+    position: relative;
+}
+
+.shadow {
+    position: absolute;
+    top: -300px;
+    right: 0;
+    width: 964px;
+    height: 869px;
+    background-image: url('../../assets/images/bg-pattern-desktop.svg');
+}
+
+.box {
+    position: absolute;
+    top: 206px;
+    left: -110px;
+}

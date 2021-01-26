@@ -11,7 +11,8 @@ const Illustration = () => {
     const [scrollPosition, setScrollPosition] = useState(0);
 
     useEffect(() => {
-        parallax(6, 35, setScrollPosition);
+        const effect = parallax(6, 35, setScrollPosition);
+        return effect; // parallax return the removeEventListener so effect === removeEventListener
     }, []);
 
     return (

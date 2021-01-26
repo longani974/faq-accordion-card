@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
 
 :root {
     --veryDarkDesaturatedBlue: hsl(238, 29%, 16%);
@@ -15,8 +15,10 @@
 }
 
 body {
-    font-family: "Kumbh Sans", sans-serif;
+    font-family: 'Kumbh Sans', sans-serif;
     background: linear-gradient(hsl(273, 75%, 66%), hsl(240, 73%, 65%));
+    min-height: 100vh;
+    margin: 0 12px;
 }
 
 .card {
@@ -72,4 +74,30 @@ h1 {
     color: var(--darkGrayishBlue);
     overflow: hidden;
     transition: height 0.3s;
+}
+
+@media screen and (min-width: 800px) {
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .card {
+        display: flex;
+        gap: 87px;
+        max-width: 920px;
+        background-color: #fff;
+        width: 920px;
+        box-shadow: 0px 50px 50px -20px rgba(53, 18, 122, 0.497159);
+        border-radius: 23px;
+        margin: 0;
+    }
+
+    .content {
+        background: transparent;
+        box-shadow: none;
+        border-radius: 23px;
+        padding: 65px 95px 83px 0;
+    }
 }
