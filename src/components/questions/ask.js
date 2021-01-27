@@ -6,7 +6,7 @@ const Ask = (props) => {
     const [isClicked, setIsClicked] = useState(false);
     const [resStyle, setResStyle] = useState({
         // visibility: "hidden",
-        height: '100%',
+        height: '0',
     });
     const [rotateArrow, setRotateArrow] = useState({
         transform: 'rotate(0deg)',
