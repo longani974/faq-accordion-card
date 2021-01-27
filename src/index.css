@@ -64,7 +64,7 @@ h1 {
     font-size: 13px;
     line-height: 13px;
     color: var(--veryDarkGrayishBlue);
-    transition: font-weight 0.15s;
+    transition: color 0.3s;
     padding-top: 18px;
 }
 
@@ -99,5 +99,13 @@ h1 {
         box-shadow: none;
         border-radius: 23px;
         padding: 65px 95px 83px 0;
+    }
+
+    .askResponse:hover {
+        cursor: pointer;
+    }
+
+    .askResponse:hover .ask {
+        color: var(--softRed);
     }
 }

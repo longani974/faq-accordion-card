@@ -45,13 +45,17 @@ const Ask = (props) => {
     };
 
     return (
-        <div className="askResponse" style={spacingBottom}>
+        <div
+            className="askResponse"
+            style={spacingBottom}
+            onClick={clickHandler}
+        >
             <div className="askWrapper" style={spacingBetween}>
                 <div className="ask" style={textWeight}>
                     {props.ask}
                 </div>
                 <div className="askBtn" style={rotateArrow}>
-                    <img src={arrowDown} alt="^" onClick={clickHandler} />
+                    <img src={arrowDown} alt="^" />
                 </div>
             </div>
             <div style={resStyle} className="response" ref={inner}>
